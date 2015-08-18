@@ -1,0 +1,8 @@
+deltaTimechallenge
+
+string line = "14:01:57 12:47:11 ";
+string[] times = line.Split(' ');
+System.DateTime endTime = System.DateTime.Parse(times[0
+System.DateTime startTime = System.DateTime.Parse(times[1]);
+System.TimeSpan timeDiff = endTime - startTime;
+System.Console.WriteLine(timeDiff.Duration());

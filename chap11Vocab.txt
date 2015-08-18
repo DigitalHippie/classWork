@@ -1,0 +1,53 @@
+Chap 11 Vocabulary
+
+Object- software objects model real world objects or abstract concepts
+
+Object-Oriented Programming (OOP)- is a programming paradigm that uses objects and their interactions for building computer programs.
+
+Object Instance- "instance" emphasizes the distinct identity of an object
+
+Object Instantiation- the creation of an instance 
+
+Object Constructor- constructors enable the programmer to set default values, limit instantiation and write code that is flexible and easy to read
+
+The "new" keyword- "new" can be used as an operator(to invoke constructors), a modifier(to hide an inherited member from a base class member), or a constraint(to restrict types that may be used as arguments for a type of parameter in a generic declaration). 
+
+Fields- a variable of any type that is declared directly in a class or struct. Fields are members of their containing type. A class or struct may have instance fields or static fields or both
+
+Properties- combines aspects of fields and methods. In a field, it will represent a "get" and "set" accessor. "Get" is executed when when the property is read, "set" is executed when the property is assigned a new value. 
+
+Methods- a code of block that contains a series of statements. 
+
+Static Members- a static constructor is called automatically to initialize the class before the first instance is created or any static members are referenced. A static constructor cannot be called directly.
+
+Non-Static Members- allows only one instance of itself to be created.
+
+.NET- is a Microsoft operating system platform that incorporates applications and a suite of tools and services. 
+
+Encapsulation (in OOP)- is a process of binding data members(variables and properties) and member functions(methods) into a single unit.
+
+Class (in OOP)- an extensible program-code-template for creating objects, providing initial values for state(member variables) and implementations of behavior(member funtions or methods).
+
+Heap- keeps track of objects in our code. There are no constraints to what can be accessed in the heap.
+
+.NET CLR (garbage collection)- "the virtual execution system" "Common Launguage Runtime" which runs the code and and provides services that make the development process easier.
+
+Namespace- a keyword to declare a scope that contains a set of related objects. 
+
+Constant (data in programming)- fixed values that may not be altered by the program.
+
+Utility Class- provides a collection of helper functions you can use to conigure settings for security, collections, driver manipulation, time and idle CPU usage.
+
+Public Member (OOP)-any class can refer to the field or called method
+
+Private Member (OOP)- only the current class will have access to the field or method
+
+The "using" keyword- creates an alias for a namespace or to import types defined in other namespaces and also defines a scope at the end of which an object will be diposed.
+
+Pointer- can only be declared to hold the memory address of value types and arrays
+
+Memory address- used to define an object data structure
+
+Mutable- string can be changed
+
+Immutable- string cannot be changed 
