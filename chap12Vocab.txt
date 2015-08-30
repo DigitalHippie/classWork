@@ -1,0 +1,26 @@
+Chapter 12 Vocabulary
+
+Exceptions- Is a notification that something interurpts the normal program execution.
+Exception Handling- When an exception arises, the state of the program is saved, the normal flow is interuppted and the control is passed to an exception handler.A mechanism which allows exceptions to be thrown or caught.
+Exceptions Hierarchy-
+Stack
+Stack Trace
+Stack Push
+Stack Pop / Pull
+Compile (a program)
+Debug
+Throw an Exception
+Catch an Exception
+Application Exception
+System Exception
+IO Exception
+Nested Exceptions
+Inner Exception
+Wrapped Exception
+Internal Exception
+Dispose Pattern
+Null
+Try
+Catch
+Finally
+Error Message
