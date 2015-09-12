@@ -1,0 +1,42 @@
+Try Catch Finally
+
+Handling Exceptions
+
+When a program finds an error, it will automatically look for an exception to handle or correct the issue. Using
+the keywords "try", "catch" and "finally"; you can create a way to handle the error.
+A common usage of catch and finally together is to obtain and use resources in a try block, deal with 
+exceptional circumstances in a catch block, and release the resources in the finally block.
+
+ex.	static void Main(string[] args)
+        {
+            System.Console.Write(new BeeGees().Love());
+            System.Console.ReadKey();
+        }
+        String Love()
+            {
+            try
+            {
+                throw new System.Exception("your love?");
+                System.Console.Write("Inside Try");
+            }
+            catch (System.Exception ex)
+            {
+                return "is " + ex.Message;
+            }
+            finally
+            {
+                System.Console.Write("How deep ");
+            }
+                return "Outside Try";
+        }
+
+In this example, the program ran into a problem so I used the "try, catch, finally" keywords.
+I decided to use the Bee Gees song to show you how the order of the exception handling goes.
+I created a new object/method called Love() to throw the "new" exceptions. The "try" block contains the 
+resources or exception message. The loop then starts with the "finally" block which will always be executed first
+and releases the "return" result or "Outside Try" How deep.
+
+Since the catch block handles the exception, it tells the program to then return the string literal "is" AND the
+exception method created in the try block "your love?".
+
+The output will read; How deep is your love?"

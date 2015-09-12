@@ -1,0 +1,81 @@
+stringMethodsInClass
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace classTestStringText
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*string line = "This is a test.";
+            Console.WriteLine(line.ToUpper()); */ //ToUpper Method.
+
+            /*string line = "This is a test.";
+            Console.WriteLine(line.ToLower());*/ //ToLower Method.
+
+            /*string line = "This is a test.";
+            string sub = line.Substring(0, 15);
+            Console.WriteLine(sub);*/ //Substring Method
+
+            /*Console.WriteLine("What is your full name?");
+            string name = Console.ReadLine();
+            string firstName = name.Trim();
+            Console.WriteLine("Your first name is " + firstName);*/ //Trim Method
+
+            /*string line = "Love, Money, Party";
+            char[] separator = new char[] {','};
+            string[] lineArray = line.Split(separator);
+
+            foreach (string word in lineArray)
+            {
+                //Console.WriteLine(word.Trim());
+            }
+                Console.WriteLine(lineArray);*/ //Split Method
+
+            /*string name = "Shalamar";
+            string task = "classwork";
+            string location = "school";
+            string formattedText = String.Format("Today {0} is in class doing {1} at {2}.", name, task, location);
+            Console.WriteLine(formattedText);*/ //Format Method
+
+            /*string line = "La dee da";
+            int index = line.IndexOf("L");
+            Console.WriteLine(index);*/ //Indexof Method
+
+            /*string line = "La dee da";
+            int index = line.LastIndexOf("La");
+            Console.WriteLine(index);*/ //LastIndexOf Method
+
+            /*string word = "love";
+            string word1 = "happiness";
+            bool word2 = true;
+            Console.WriteLine("Comparison of {0} and {1} = true", word, word1, String.Compare(word, word1));*/  //
+
+            //Next do Equals(); Concat(); and Replace(); do codeeval challange Trailing Strings
+
+            /*string line = "Howdy Doody";
+            string line1 = line;
+            Console.WriteLine(line.Equals(line1)); */ //Equals Method
+
+            /*string line = "It's a beautiful day! ";
+            string line1 = "Such a beautiful day!";
+            string allLines = String.Concat(line, line1);
+            Console.WriteLine(allLines); */  // Concat Method
+
+            /*string line = "You gotta do, what you gotta do! Do you agree?";
+            Console.WriteLine(line);
+            Console.ReadLine();
+            string line1 = "Karma is a B!";
+            string replace = line.Replace(line, line1);
+            Console.WriteLine(replace);*/  //Replace Method
+
+
+
+        }
+    }
+}

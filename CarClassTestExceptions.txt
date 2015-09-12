@@ -1,0 +1,79 @@
+CarClassTestExceptions
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace carTest1
+{
+    public class CarTest1
+    {
+        private string car;
+        private int initialSpeed;
+        private int finalSpeed;
+        private int time;
+        private int maxSpeed = 100;
+
+        public string Car
+        {
+            get { return this.car;}
+            set { this.car = value;}
+        }
+        public int InitialSpeed
+        {
+            get { return this.initialSpeed;}
+            set { this.initialSpeed = value;}
+        }
+        public int FinalSpeed
+        {
+            get { return this.finalSpeed;}
+            set { this.finalSpeed = 100;}
+        }
+        public int Time
+        {
+            get { return this.time; }
+            set { this.time = 0; }
+        }
+       
+        public CarTest1()
+        {
+            this.car = "Alfa Romeo";
+            this.initialSpeed = 0;
+        }
+        public CarTest1(string Car, int Speed)
+        {
+            this.car = Car;
+            this.initialSpeed = Speed;
+        }
+        public void Drive()
+        {
+            Console.WriteLine("Put car in drive and step on gas");
+        }
+        public void Park()
+        {
+            Console.WriteLine("Slow the car down to a stop and put in park");
+        }
+        public void Accelerate()
+        {
+            this.initialSpeed = 0;
+            for (int counter = 0; counter < 11; counter++ )
+                {
+                    initialSpeed += 10;
+
+                    if (initialSpeed > this.maxSpeed)
+                    {
+                        Exception help = new Exception(string.Format("Your are going too fast! Slow down!"));
+                        help.HelpLink = "http://www.dmv.org/oh-ohio/traffic-ticket-fines-and-penalties.php";
+                        throw help;
+                        //throw new Exception(string.Format("Your are going too fast! Slow down!"));
+                    }
+                    else
+                        Console.WriteLine("You are currently going" + initialSpeed + "MPH!");
+
+
+                }
+        }
+    }
+}
