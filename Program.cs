@@ -17,9 +17,10 @@ namespace fileWriter
                 writer.WriteLine("Hello World");
             }*/
 
-            StreamWriter writer = new StreamWriter("..\\..\\Numbers.txt");
+            StreamWriter writer = new StreamWriter("..\\..\\Numbers.txt", true);
             using (writer)
             {
+                
                 // Loop from 1 - 20 and write the number to a line
                 for (int i = 1; i <= 20; i++)
                 {
