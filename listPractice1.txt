@@ -1,0 +1,27 @@
+listPractice1
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace listPractice1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double average = 0;
+            double sum = 0;
+            List<double> grades = new List<double>() { 65, 77, 80, 82, 89, 90, 92, 95, 97, 100 };
+            foreach(double num in grades)
+            {
+                sum += num;
+            }
+            Console.WriteLine(sum);
+            foreach(double num in grades)
+            {
+                average = sum / 10;
+            }
+            Console.WriteLine(average);
